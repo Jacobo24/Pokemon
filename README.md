@@ -1,6 +1,6 @@
 # Pokemon
 
-
+link al repositorio: https://github.com/Jacobo24/Pokemon.git
 
 
 
@@ -51,25 +51,33 @@ Nota: Es obligatorio el uso de enumerados para el atributo del tipo de arma. El 
 
 Se pide:
 
-        i.     Incluya los atributos de esta clase y establezca la visibilidad adecuada (público, privado, protegido). Añada cualquier atributo y/o método que considere necesario.
+        i.     Incluya los atributos de esta clase y establezca la visibilidad adecuada (público, privado, protegido). Añada cualquier atributo y/o método que
+        considere necesario.
 
-       ii.     Programe un método constructor que reciba los datos necesarios para crear un Pokémon. El método debe verificar el tipo y valor de cada uno de los parámetros y lanzar la excepción correspondiente cuando no se cumplan los requisitos. El método constructor debe asegurarse de que el atributo ID es una identificación nueva no tomada por otros Pokémons. Así mismo, programe también un método destructor que se encarge de eliminar la instancia de Pokemon de la variable lista de IDs global.
+       ii.     Programe un método constructor que reciba los datos necesarios para crear un Pokémon. El método debe verificar el tipo y valor de cada uno de los
+       parámetros y lanzar la excepción correspondiente cuando no se cumplan los requisitos. El método constructor debe asegurarse de que el atributo ID es una
+       identificación nueva no tomada por otros Pokémons. Así mismo, programe también un método destructor que se encarge de eliminar la instancia de Pokemon de la
+       variable lista de IDs global.
 
-      iii.     Programe un método que mejor corresponda para imprimir objetos de tipo Pokemon según el siguiente ejemplo: “Pokemon ID 8 with name Bulbasaur has as weapon PUNCH and health 87.”
+      iii.     Programe un método que mejor corresponda para imprimir objetos de tipo Pokemon según el siguiente ejemplo: “Pokemon ID 8 with name Bulbasaur has as
+      weapon PUNCH and health 87.”
 
      iv.     Programe los métodos setters y getters para la clase en función de lo que necesite. Si no necesita algún o ningún getter y/o setter, argumente por qué en un comentario dentro del módulo.
 
       v.     Programe el método is_alive(self) de la clase Pokémon. Este método sirve para saber si el Pokemon está vivo.
 
-     vi.     Programe el método fight_attack(self, Pokémon pokemon_to_attack). Método que implementa el ataque del Pokémon usando un golpe sobre otro Pokémon. Este método se basa en el método fight_defense(self, int points_of_damage) del Pokémon atacado. Se aplicará el índice de ataque del Pokémon atacante como representación del golpe dado. Este método devolverá un booleano True si se ha podido atacar a la criatura Pokémon.
+     vi.     Programe el método fight_attack(self, Pokémon pokemon_to_attack). Método que implementa el ataque del Pokémon usando un golpe sobre otro Pokémon. Este
+     método se basa en el método fight_defense(self, int points_of_damage) del Pokémon atacado. Se aplicará el índice de ataque del Pokémon atacante como
+     representación del golpe dado. Este método devolverá un booleano True si se ha podido atacar a la criatura Pokémon.
 
-    vii.     Programe el método fight_defense(self, int points_of_damage). Este método implementa la defensa del Pokémon de un golpe de otro Pokémon. Este método actualiza el atributo de puntos de salud que tiene el Pokémon en base a los puntos de daño recibidos menos el índice de defensa del propio Pokémon. Si el índice de defensa es mayor que los puntos de ataque recibidos, el método devolverá false y el Pokémon no sufrirá ningún daño. Este método devolverá un booleano True si se ha sufrido un ataque por parte de otra criatura Pokémon.
+    vii.     Programe el método fight_defense(self, int points_of_damage). Este método implementa la defensa del Pokémon de un golpe de otro Pokémon. Este método
+    actualiza el atributo de puntos de salud que tiene el Pokémon en base a los puntos de daño recibidos menos el índice de defensa del propio Pokémon. Si el índice de
+    defensa es mayor que los puntos de ataque recibidos, el método devolverá false y el Pokémon no sufrirá ningún daño. Este método devolverá un booleano True si se ha
+    sufrido un ataque por parte de otra criatura Pokémon.
 
    viii.     Pruebe los objetos de la clase Pokémon con los casos de prueba que se le han pasado.
 
- 
 
- 
 
 Para ayudar en el desarrollo de este ejercicio, se le hace entrega de un UML parcialmente completo de la posible implementación de este juego. Se puede modificar o realizar un UML completamente distinto, el cuál es necesario explicar brevemente en un documento de texto o en los comentarios de un fichero .py. En caso de realizar un UML diferente, no se aplicarán los criterios en base a los casos de prueba facilitados, que es probable que no funcionen sin una adaptación previa.
 
