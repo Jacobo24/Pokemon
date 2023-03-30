@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+from enum import Enum
 
 """
 This Python module contains not only the Enum WeaponType, but also the test of
@@ -36,6 +36,9 @@ this Python class.
 
 
 class WeaponType():
+    def __init__(self, name, value):
+        self.name = name
+        self.value = value
     """Python class to implement an enumeration for the attribute Weapon Type.
 
     This Python class implements an enumeration for the attribute Weapon Type.
