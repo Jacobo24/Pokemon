@@ -35,7 +35,7 @@ this Python class.
 
 
 
-class WeaponType():
+class WeaponType(Enum):
     def __init__(self, name, value):
         self.name = name
         self.value = value
