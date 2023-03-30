@@ -37,6 +37,8 @@ this Python class.
 
 
 class PokemonWater():
+    def __init__(self, id, pokemon_name, weapon_type, health_points, attack_rating, defense_rating):
+        super().__init__(id, pokemon_name, weapon_type, health_points, attack_rating, defense_rating)
     """Python class to implement a basic version of a Pokemon of the game.
 
     This Python class implements the basic version of a Pokemon of the game.

@@ -36,12 +36,7 @@ this Python class.
 
 class PokemonAir():
     def __init__(self, id, pokemon_name, weapon_type, health_points, attack_rating, defense_rating):
-        self.id = id
-        self.pokemon_name = pokemon_name
-        self.weapon_type = weapon_type
-        self.health_points = health_points
-        self.attack_rating = attack_rating
-        self.defense_rating = defense_rating
+        super().__init__(id, pokemon_name, weapon_type, health_points, attack_rating, defense_rating)
     """Python class to implement a basic version of a Pokemon of the game.
 
     This Python class implements the basic version of a Pokemon of the game.
