@@ -43,6 +43,78 @@ class Pokemon():
         self.health_points = health_points
         self.attack_rating = attack_rating
         self.defense_rating = defense_rating
+        while True:
+            try:
+                self.id = int(input("Enter the ID of the Pokemon: "))
+                break
+            except ValueError:
+                print("Please enter a valid ID.")
+        while True:
+            try:
+                self.pokemon_name = input("Enter the name of the Pokemon: ")
+                break
+            except ValueError:
+                print("Please enter a valid name.")
+        while True:
+            try:
+                self.weapon_type = input("Enter the type of weapon that carries out the Pokemon: ")
+                break
+            except ValueError:
+                print("Please enter a valid weapon type.")
+        while True:
+            try:
+                self.health_points = int(input("Enter the points of health that the Pokemon has: "))
+                break
+            except ValueError:
+                print("Please enter a valid number of health points.")
+        while True:
+            try:
+                self.attack_rating = int(input("Enter the attack rating of the Pokemon: "))
+                break
+            except ValueError:
+                print("Please enter a valid attack rating.")
+        while True:
+            try:
+                self.defense_rating = int(input("Enter the defense rating of the Pokemon: "))
+                break
+            except ValueError:
+                print("Please enter a valid defense rating.")
+    def get_pokemon_name(self):
+        return self.pokemon_name
+    def get_weapon_type(self):
+        return self.weapon_type
+    def get_health_points(self):
+        return self.health_points
+    def get_attack_rating(self):
+        return self.attack_rating
+    def get_defense_rating(self):
+        return self.defense_rating
+    def __str__(self):
+        return "Pokemon ID: " + str(self.id) + ", Pokemon name: " + str(self.pokemon_name) + ", Weapon type: " + str(self.weapon_type) + ", Health points: " + str(self.health_points) + ", Attack rating: " + str(self.attack_rating) + ", Defense rating: " + str(self.defense_rating)
+    def is_alive(self):
+        if self.health_points > 0:
+            return True
+        else:
+            return False
+    def attack(self, pokemon):
+        if self.is_alive() == True and pokemon.is_alive() == True:
+            if self.weapon_type == WeaponType.PUNCH:
+                pokemon.health_points = pokemon.health_points - self.attack_rating
+            elif self.weapon_type == WeaponType.HEADBUTT:
+                pokemon.health_points = pokemon.health_points - (self.attack_rating * 2)
+            elif self.weapon_type == WeaponType.FIRE:
+                pokemon.health_points = pokemon.health_points - (self.attack_rating * 3)
+            elif self.weapon_type == WeaponType.THUNDER:
+                pokemon.health_points = pokemon.health_points - (self.attack_rating * 4)
+            elif self.weapon_type == WeaponType.WATER:
+                pokemon.health_points = pokemon.health_points - (self.attack_rating * 5)
+            if pokemon.health_points < 0:
+                pokemon.health_points = 0
+        else:
+            print("One of the Pokemons is dead.")
+    def defense(self, pokemon):
+        return pokemon.attack(self.defense_rating)
+    
     """Python class to implement a basic version of a Pokemon of the game.
 
     This Python class implements the basic version of a Pokemon of the game.
