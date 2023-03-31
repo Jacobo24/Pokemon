@@ -63,6 +63,10 @@ class WeaponType(Enum):
       >>> from weapon_type import WeaponType
       >>> obj_WeaponType = WeaponType.Boxer
     """
+    PUNCH = 5
+    KICK = 7
+    ELBOW = 9
+    HEADBUTT = 10
 
 
 
